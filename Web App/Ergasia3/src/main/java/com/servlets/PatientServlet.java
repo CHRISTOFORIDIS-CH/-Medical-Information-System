@@ -176,6 +176,9 @@ public class PatientServlet extends HttpServlet
                 String end = request.getParameter("endvalue");
                 String dAMKA2 = request.getParameter("dAMKA");
                 Patient.bookAppointment(date2,start2,end,dAMKA2,response,request,datasource);
+
+            case 9:
+                // Code to be implemented for ChatBot
         }
     }
 }
