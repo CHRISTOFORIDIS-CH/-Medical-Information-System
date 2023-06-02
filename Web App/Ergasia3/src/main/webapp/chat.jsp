@@ -60,7 +60,16 @@
        a:hover {
            background-color: #001F4C; /* Darker shade of blue for hover effect */
        }
-
+       .help-button {
+           background-color: #012A6C;
+           display: inline-block;
+           padding: 10px 20px;
+           margin-bottom: 20px;
+           color: white;
+           border: none;
+           border-radius: 5px;
+           text-decoration: none;
+       }
 
    </style>
 
@@ -72,8 +81,11 @@
         }
 
         function askSymptom() {
-            updateChatbox('Chatbot: What\'s your symptom?');
+            updateChatbox('Medical Assistant: What\'s your symptom?');
         }
+        function showHelp() {
+          alert("Tell your medical assistant in which part of the body where you're experiencing discomfort and he will suggest a doctor.");
+       }
 
         window.onload = askSymptom;
     </script>
@@ -82,6 +94,7 @@
 <div id="chatbox"></div>
 <input type="text" id="userInput">
 <button onclick="submitSymptom()">Submit</button>
+<button onclick="showHelp()" class="button help-button">Help</button>
 <a href="patient_main_environment.jsp">Back</a>
 
 <script>

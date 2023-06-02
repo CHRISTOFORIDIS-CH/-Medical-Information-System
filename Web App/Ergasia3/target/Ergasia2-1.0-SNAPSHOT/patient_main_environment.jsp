@@ -206,8 +206,9 @@ scheduled in the past-->
 
                         <button id="buttons" onclick="setAction(3);">Scheduled appointments</button>
 
-                        <!-- Button for ChatBot BisBa new action case = 9 wait to be implemented -->
                         <button id="buttons" onclick=setAction(9)> ChatBot </button>
+
+                        <button id="buttons" onclick=setAction(10)> Human Anatomy </button>
 
                         <button id="buttons" onclick="setAction(4);">Logout</button>
 

@@ -179,6 +179,11 @@ public class PatientServlet extends HttpServlet
 
             case 9:
                 response.sendRedirect(request.getContextPath() + "/chat.jsp");
+                break; // So no error exists
+
+            case 10:
+                response.sendRedirect(request.getContextPath() + "/HumanAnatomyServlet");
+                break;
         }
     }
 }
