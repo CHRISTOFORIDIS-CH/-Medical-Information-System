@@ -81,7 +81,7 @@
         }
 
         function askSymptom() {
-            updateChatbox('Chatbot: What\'s your symptom?');
+            updateChatbox('Medical Assistant: What\'s your symptom?');
         }
         function showHelp() {
           alert("Tell your medical assistant in which part of the body where you're experiencing discomfort and he will suggest a doctor.");
